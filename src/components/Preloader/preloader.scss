@@ -1,0 +1,36 @@
+.lds-preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  
+}
+.lds-preloader div {
+  left: 2px;
+  width: 64px;
+  background: #ffffff;
+  border: 2px solid #3DBDF6;
+  animation: lds-preloader 1.5s cubic-bezier(0.4, 0, 1, 1) infinite;
+}
+.lds-preloader div:nth-child(1) {
+  left: 4px;
+  animation-delay: -0.24s;
+}
+.lds-preloader div:nth-child(2) {
+  left: 8px;
+  animation-delay: -0.12s;
+}
+.lds-preloader div:nth-child(3) {
+  left: 16px;
+  animation-delay: 0;
+}
+@keyframes lds-preloader {
+  0% {
+    top: 2px;
+    height: 32px;
+  }
+  50%, 100% {
+    top: 12px;
+    height: 8px;
+  }
+}

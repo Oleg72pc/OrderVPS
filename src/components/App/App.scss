@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'ProximaNova-Extrabld';
+  src: url(../../assets/fonts/_Proxima_Nova/proximanova_extrabold.otf);
+}
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url(../../assets/fonts/_Proxima_Nova/proximanova_regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 50px;
+  margin: 50px;
+  height: 100vh;
+}
+

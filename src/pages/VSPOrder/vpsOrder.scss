@@ -1,0 +1,211 @@
+* {
+  font-family: 'ProximaNova-Regular';;
+}
+.vpsorder-container {
+  padding: 0px 15px;  
+  background: #F5F5F5;
+}
+.vpsorder{
+  padding: 15px;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 4px 0px #E3E9EC;
+  
+}
+.vpsorder-header {
+  margin-left: 10px;
+}
+.container-tariffs{
+  display: flex;
+  flex-wrap: wrap;
+}
+.line {
+  height: 2px;
+  left: 251px;
+  top: 142px;
+  border: 2px solid #F7FAFB;
+  margin-bottom: 15px;
+}
+.container-element-ssd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #E0F6FC;
+    border-radius: 4px;
+    width: 232px;
+    height: 547px;
+    padding: 0px 25px;
+    margin: 8px;
+}
+.container-element-hdd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #C4EBF8;
+  border-radius: 4px;
+  width: 232px;
+  height: 547px;
+  padding: 0px 25px;
+  margin: 8px;
+}
+.container-element-turbo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #ECFDF7;
+  border-radius: 4px;
+  width: 232px;
+  height: 547px;
+  padding: 0px 25px;
+  margin: 8px;
+}
+
+.account-title {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #062436;
+}
+.page-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #062436;
+}
+.category-title {
+  color: #7A8185;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.select-category {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  width: 232px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 2px solid #939DA2;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.select-category:hover:active {
+  border: 2px solid #3DBDF6;
+}
+
+.select-distribution {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  width: 192px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 2px solid #939DA2;
+  border-radius: 4px;
+  
+}
+.select-software {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  width: 192px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 2px solid #939DA2;
+  border-radius: 4px;
+
+}
+.btn {
+  font-size: 16px;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  width: 167px;
+  height: 36px;
+  background: #3DBDF6;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.btn:hover {
+  background:#37ACE0;
+}
+.btn:active {
+  background:#0086C2;
+}
+.container-element-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.tariffs-name {
+  margin-left: 15px;
+}
+.price-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.basic-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 5px;
+}
+.additional-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px; 
+  color: #62686C;
+}
+
+.form_toggle {
+  display: flex;
+	overflow: hidden;
+  justify-content: center;
+  border-radius: 35px;
+  border: 1px solid #3DBDF6;
+}
+.form_toggle-item input[type=radio] {
+	display: none;
+}
+.form_toggle-item label {
+  padding: 11px;
+  font-size: 12px;
+  font-weight: 400;
+	background: #FFFFFF;
+  color: #3DBDF6;
+  border-radius: 35px;
+	cursor: pointer;
+}
+.form_toggle .item-1 input[type=radio]:checked + label {
+	background: #3DBDF6;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.form_toggle .item-2 input[type=radio]:checked + label {
+	background: #3DBDF6;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.additiona-options {
+  display: flex;
+  align-items: center;
+}
+.additiona-options-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 15px;
+}
+.plus-logo {
+  cursor: pointer;
+}
+
+

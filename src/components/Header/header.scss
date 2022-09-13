@@ -1,0 +1,19 @@
+.header {
+  font-family: 'ProximaNova-Regular';
+  font-style: normal;
+  font-size: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 15px 20px;
+  background: #F5F5F5;
+  color: #7A8185;
+  align-content: center;
+  flex-direction: row;
+}
+.header-element{
+  margin-right: 15px;
+  cursor: pointer;
+}

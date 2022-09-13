@@ -1,0 +1,155 @@
+a {
+  text-decoration: none;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+.main-container{
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  background: #062436;
+  color: #FFFFFF;
+  min-height: 100%;
+  width: 68px;
+}
+.sidebar-activ {
+  background: #062436;
+  color: #FFFFFF;
+  min-height: 100%;
+  width: 211px;
+}
+.routes {
+  color: #FFFFFF;
+  
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px 40px;
+  margin-bottom: 5px;
+}
+.logo {
+  width: 110px;
+  margin-right: 45px
+}
+.link {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  color: #FFFFFF;
+  gap: 10px;
+  padding: 10px 10px;
+}
+.link:hover {
+  background: #0A3145;
+}
+.link:active {
+  background: #3DBDF6;
+}
+.link_active{
+  display: flex;
+  color: #FFFFFF;
+  height: 45px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  background: #3DBDF6 ;
+}
+.link-text {
+  font-family: 'ProximaNova-Regular';
+  font-weight: 700;
+  align-self: center;
+  white-space: nowrap;
+  font-size: 14px;
+}
+.iconSidebar{
+margin-left: 5px;
+}
+.bars {
+  cursor: pointer;
+}
+.icon-menu {
+  cursor: pointer;
+  position: absolute;
+}
+.icon-menu-activ{
+  display: none;
+ }
+
+
+@media (max-width: 768px) {
+  .main-container {
+    min-height: 100vh;
+  }
+  .vpsorder-container{
+    width: 100vw;
+  }
+  .sidebar {
+    margin-left: -68px;
+    z-index: 2;
+  }
+  .select-category {
+   width: 100%;
+  }
+  .container-tariffs{
+    justify-content: center
+  }
+  .footer-copyright {
+    margin-right: 100px;
+  }
+  .bars {
+  left: 50px;
+  background: #062436;
+  top: 15px;
+  }
+  .icon-menu {
+    position: absolute;
+    font-size: 20px;
+    padding: 5px;
+    left: 35px;
+    top: 8px;
+  }
+  .icon-menu-activ{
+   display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .page-footer {
+    padding: 15px 15px 15px;
+  }
+  .footer-copyright {
+    margin-bottom: 15px;
+  }
+  .mobile-app {
+    margin-bottom: 15px;
+  }
+  .container-element-ssd {
+    align-items: flex-start;
+    width: 285px;
+  }
+  .container-element-hdd {
+    align-items: flex-start;
+    width: 285px;
+  }
+  .container-element-turbo {
+    align-items: flex-start;
+    width: 285px;
+  }
+  .select-distribution {
+    width: 235px;
+    height: 39px;
+  }
+  .select-software {
+    width: 235px;
+    height: 39px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
