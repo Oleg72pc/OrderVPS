@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/img/logo.svg';
