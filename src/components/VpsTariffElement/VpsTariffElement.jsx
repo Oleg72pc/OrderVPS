@@ -15,7 +15,6 @@ function VpsTariffElement() {
 
   const getFilterDistributive = (e)=> {
     dispatch(filterDistributiveAC(e));
-    console.log(e.target.value);
   };
 
   return (

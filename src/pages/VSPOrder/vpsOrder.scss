@@ -207,7 +207,9 @@
 .plus-logo {
   cursor: pointer;
 }
-
+.main-active {
+  width: 100%;
+}
 
 @media (max-width: 376px) {
   .main-active {
