@@ -77,6 +77,7 @@ function Sidebar({children}) {
     <section className='routes'>
       {routes.map((route) => (
         <NavLink  
+        onClick={toggle}
         to={route.path} 
         key={route.name} 
         className={({isActive}) => (isActive ? 'link_active' : 'link')}>
@@ -88,7 +89,7 @@ function Sidebar({children}) {
       ))}
     </section>
     </div>
-    <main>{children}</main>
+    <main className={isOpen ? 'main-active' : 'main'}>{children}</main>
    </div>
   );
 }
