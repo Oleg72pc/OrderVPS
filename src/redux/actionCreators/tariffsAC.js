@@ -1,8 +1,4 @@
-import {
-  INIT_TARIFFS,
-  FILTER_TARIFFS,
-  FILTER_SOFTWARE,
-} from '../actionTypes/tariffsAT';
+import { INIT_TARIFFS, FILTER_TARIFFS, FILTER_SOFTWARE } from '../actionTypes/tariffsAT';
 
 export const initTariffsAC = (payload) => {
   return {
@@ -10,19 +6,15 @@ export const initTariffsAC = (payload) => {
     payload,
   };
 };
-export const filterTariffsAC =(payload) =>{
+export const filterTariffsAC = (payload) => {
   return {
-    type : FILTER_TARIFFS,
+    type: FILTER_TARIFFS,
     payload,
-  }
-}
-export const filterDistributiveAC =(payload) =>{
+  };
+};
+export const filterDistributiveAC = (payload) => {
   return {
-    type : FILTER_SOFTWARE,
+    type: FILTER_SOFTWARE,
     payload,
-  }
-}
-
-
-
-
+  };
+};

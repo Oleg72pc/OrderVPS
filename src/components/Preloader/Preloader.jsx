@@ -1,13 +1,13 @@
 import React from 'react';
-import './preloader.scss'
+import './preloader.scss';
 
 function Preloader() {
   return (
-      <div className="lds-preloader">
-        <div></div>
-        <div></div>
-        <div></div>
-        </div>
+    <div className="lds-preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   );
 }
 

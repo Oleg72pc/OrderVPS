@@ -6,25 +6,24 @@ a {
   height: 100%;
 }
 
-.main-container{
+.main-container {
   display: flex;
   min-height: 100vh;
 }
 .sidebar {
   background: #062436;
-  color: #FFFFFF;
+  color: #ffffff;
   min-height: 100%;
   width: 68px;
 }
 .sidebar-activ {
   background: #062436;
-  color: #FFFFFF;
+  color: #ffffff;
   min-height: 100%;
   width: 211px;
 }
 .routes {
-  color: #FFFFFF;
-  
+  color: #ffffff;
 }
 .top_section {
   display: flex;
@@ -35,30 +34,30 @@ a {
 }
 .logo {
   width: 110px;
-  margin-right: 45px
+  margin-right: 45px;
 }
 .link {
   display: flex;
   height: 45px;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   gap: 10px;
   padding: 10px 10px;
 }
 .link:hover {
-  background: #0A3145;
+  background: #0a3145;
 }
 .link:active {
-  background: #3DBDF6;
+  background: #3dbdf6;
 }
-.link_active{
+.link_active {
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 45px;
   align-items: center;
   gap: 10px;
   padding: 10px 10px;
-  background: #3DBDF6 ;
+  background: #3dbdf6;
 }
 .link-text {
   font-family: 'ProximaNova-Regular';
@@ -67,8 +66,8 @@ a {
   white-space: nowrap;
   font-size: 14px;
 }
-.iconSidebar{
-margin-left: 5px;
+.iconSidebar {
+  margin-left: 5px;
 }
 .bars {
   cursor: pointer;
@@ -77,10 +76,9 @@ margin-left: 5px;
   cursor: pointer;
   position: absolute;
 }
-.icon-menu-activ{
+.icon-menu-activ {
   display: none;
- }
-
+}
 
 @media (max-width: 1279px) {
   .main-container {
@@ -91,18 +89,18 @@ margin-left: 5px;
     z-index: 2;
   }
   .select-category {
-   width: 100%;
+    width: 100%;
   }
-  .container-tariffs{
-    justify-content: center
+  .container-tariffs {
+    justify-content: center;
   }
   .footer-copyright {
     margin-right: 100px;
   }
   .bars {
-  left: 50px;
-  background: #062436;
-  top: 15px;
+    left: 50px;
+    background: #062436;
+    top: 15px;
   }
   .icon-menu {
     position: absolute;
@@ -111,8 +109,8 @@ margin-left: 5px;
     left: 35px;
     top: 8px;
   }
-  .icon-menu-activ{
-   display: none;
+  .icon-menu-activ {
+    display: none;
   }
 }
 
@@ -152,7 +150,6 @@ margin-left: 5px;
   .btn {
     width: 100%;
   }
- 
 }
 @media (max-width: 767px) {
   .main-active {
@@ -165,5 +162,3 @@ margin-left: 5px;
     justify-content: space-between;
   }
 }
-
-
