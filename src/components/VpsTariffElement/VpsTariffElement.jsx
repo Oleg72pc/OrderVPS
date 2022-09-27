@@ -5,15 +5,19 @@ import iconHDD from '../../assets/img/iconHDD.svg';
 import iconTurbo from '../../assets/img/iconTurbo.svg';
 import iconPlus from '../../assets/img/iconPlus.svg';
 import { filterDistributiveAC } from '../../redux/actionCreators/tariffsAC';
+import './vpsTariffElement.scss'
 
 function VpsTariffElement({ tariff, myKey, softwares }) {
   const { distributives, filterSoftwares } = useSelector((state) => state.tariffsRed);
   const dispatch = useDispatch();
-  const [test, setTest] = React.useState('ubuntu-20-04');
+  const [filterSoftwaresSingle, setTfilterSoftwaresSingle] = React.useState('ubuntu-20-04');
+  const [datacenterToggle, setDatacenterToggle] = React.useState(true);
+
+  const toggle = () => setDatacenterToggle(!datacenterToggle);
 
   const getFilterDistributive = (e) => {
     dispatch(filterDistributiveAC(e));
-    setTest(e.target.value.split(',').pop());
+    setTfilterSoftwaresSingle(e.target.value.split(',').pop());
   };
 
   const dist = distributives.map((distrib) => (
@@ -26,7 +30,7 @@ function VpsTariffElement({ tariff, myKey, softwares }) {
       {soft.description}
     </option>
   ));
-  const softSingle = filterSoftwares[`${test}`]?.map((soft) => (
+  const softSingle = filterSoftwares[`${filterSoftwaresSingle}`]?.map((soft) => (
     <option key={soft.id} value={soft.name}>
       {soft.description}
     </option>
@@ -81,16 +85,10 @@ function VpsTariffElement({ tariff, myKey, softwares }) {
       </select>
       <div className="additional-text">Дата-центр </div>
 
-      <form className="form_toggle">
-        <div className="form_toggle-item item-1">
-          <input id={tariff.billing_id} type="radio" name="radio" value="1" defaultChecked />
-          <label htmlFor={tariff.billing_id}>Санкт-Петербург</label>
-        </div>
-        <div className="form_toggle-item item-2">
-          <input id={tariff.billing_id + '2'} type="radio" name="radio" value="2" />
-          <label htmlFor={tariff.billing_id + '2'}>Москва</label>
-        </div>
-      </form>
+      <div className="switch-button-form">
+          <div onClick={toggle} className={datacenterToggle ? "switch-button-active" : "switch-button"}>Санкт-Петербург</div>
+          <div onClick={toggle} className={datacenterToggle ? "switch-button" : "switch-button-active"}>Москва</div>
+      </div>
 
       <div className="additiona-options">
         <div className="plus-logo">
